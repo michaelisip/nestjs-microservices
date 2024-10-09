@@ -1,0 +1,29 @@
+### all
+GET http://localhost:3000/books
+
+### get one
+GET http://localhost:3000/books/1
+
+### create
+POST http://localhost:3000/books
+Content-Type: application/json 
+
+{
+    "title": "Lorem XX",
+    "author": "John Doe XX",
+    "rating": 4
+}
+
+### update
+Content-Type: application/json 
+
+PUT http://localhost:3000/books/2
+
+{
+    "title": "Updated",
+    "author": "John Doe XX",
+    "rating": 4
+}
+
+### destroy
+DELETE http://localhost:3000/books/1
